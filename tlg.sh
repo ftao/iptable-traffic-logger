@@ -30,7 +30,7 @@ function enable(){
 function show(){
     in_bytes=`$IPTABLES -L $CHAIN_NAME_INPUT -Z -vnx | tail -2 | head -1 | awk '{print $2}'`
     out_bytes=`$IPTABLES -L $CHAIN_NAME_OUTPUT -Z -vnx | tail -2 | head -1 | awk '{print $2}'`
-    echo "[$in_bytes,$out_bytes]"
+    echo "[$PORT,$in_bytes,$out_bytes]"
 }
 
 
