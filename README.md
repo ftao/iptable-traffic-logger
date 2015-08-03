@@ -10,7 +10,7 @@ enable port traffic logging
 
 disable port traffic logging
 ```
-./tlg.sh enable <PORT>
+./tlg.sh disable <PORT>
 ```
 
 show and reset port traffic stats
